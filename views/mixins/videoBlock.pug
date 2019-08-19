@@ -1,0 +1,9 @@
+//- * mixin: 웹사이트에서 자주 반복되는 html 코드를 재활용하는 방법
+ - pug 함수의 일종
+   - 인자 1개 필요
+
+mixin videoBlock(video = {})
+    .videoBlock
+        video.videoBlock__thumbnail(src=video.videoFile, controls=true)
+        h4.videoBlock__title=video.title
+        h6.videoBlcok__views=video.views
